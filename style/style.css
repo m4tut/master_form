@@ -38,5 +38,12 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: aqua;
 }
+
+.block_form {
+    width: 1110px;
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
