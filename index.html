@@ -21,9 +21,11 @@
                 </article>
                 <div class="form_content">
                     <div class="form_message">
-                        <h2 class="message_title"><b>Try it free 7 days</b> then $20/mo. thereafter</h2>
+                        <h2 class="message_title">
+                            Try it free 7 days<span class="text--grayishBlue"> then $20/mo. thereafter</span>
+                        </h2>
                     </div>
-                    <form id="form" action="/" class="form" method="POST">
+                    <form id="form" action="/" class="form" method="POST" novalidate>
                         <div class="form_item">
                             <input
                                 type="text"
@@ -34,6 +36,7 @@
                                 pattern="[A-Za-zА-Яа-яЁё]"
                                 required
                             />
+                            <p class="error_message text--red">First Name cannot be empty</p>
                         </div>
                         <div class="form_item">
                             <input
@@ -70,11 +73,11 @@
                         <button type="submit" class="submit_btn" aria-label="submit">
                             Claim your free trial
                         </button>
+                        <p class="form_text">
+                            By clicking the button, you are agreeing to our
+                            <span class="text--red">Terms and Services</span>
+                        </p>
                     </form>
-                    <p class="form_text">
-                        By clicking the button, you are agreeing to our
-                        <span class="text--red">Terms and Services</span>
-                    </p>
                 </div>
             </div>
         </div>

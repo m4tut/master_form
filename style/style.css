@@ -4,15 +4,17 @@
     /* Primary */
     --red: hsl(0, 100%, 74%);
     --green: hsl(154, 59%, 51%);
+    --darkGreen: hsl(154, 59%, 44%);
 
     /* Accent */
     --blue: hsl(248, 32%, 49%);
 
     /* Neutral */
-    --darkBlue: hsl(249, 10%, 26%);
+    --darkBlue: hsla(249, 10%, 26%, 0.2);
     --grayishBlue: hsl(246, 25%, 77%);
 
     --white: hsl(180, 1%, 100%);
+    --gray: hsl(0, 0%, 87%);
 }
 
 *,
@@ -52,7 +54,7 @@ body {
 
 /* left content */
 .block_text {
-    margin: auto 0;
+    margin: auto 30px auto 0;
 }
 
 .text_title {
@@ -68,3 +70,104 @@ body {
 }
 
 /* right content */
+.form_content {
+    margin-left: 10px;
+}
+
+.form_message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 530px;
+    height: 60px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: var(--darkBlue) 0 8px;
+}
+
+.message_title {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form {
+    margin-top: 25px;
+}
+
+.form {
+    width: 530px;
+    min-height: 475px;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: var(--darkBlue) 0 8px;
+    padding: 40px;
+}
+
+.form_item {
+    margin-bottom: 20px;
+}
+
+.form_input {
+    display: block;
+    height: 55px;
+    width: 460px;
+    border-radius: 6px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 600;
+
+    border: 1px solid var(--gray);
+    outline: none;
+}
+
+.form_input:focus {
+    border: 1px solid var(--blue);
+}
+
+.singup__input--invalid {
+    background: url(../images/icon-error.svg) no-repeat calc(100% - 1rem);
+    border: 3px solid var(--red);
+}
+
+.error_message {
+    display: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: end;
+    margin-top: 5px;
+}
+
+.submit_btn {
+    height: 55px;
+    width: 460px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 600;
+    color: inherit;
+    outline: none;
+    border: none;
+    background-color: var(--green);
+    box-shadow: var(--darkGreen) 0 3px;
+}
+
+.form_text {
+    margin-top: 20px;
+    color: var(--gray);
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* text */
+.text--grayishBlue {
+    font-weight: 400;
+    color: var(--grayishBlue);
+}
+
+.text--red {
+    color: var(--red);
+}
