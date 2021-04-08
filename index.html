@@ -33,10 +33,10 @@
                                 name="firstName"
                                 placeholder="First Name"
                                 aria-label="First Name"
-                                pattern="[A-Za-zА-Яа-яЁё]"
+                                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+(\s[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+)*$"
                                 required
                             />
-                            <p class="error_message text--red">First Name cannot be empty</p>
+                            <p class="error_message text--red"></p>
                         </div>
                         <div class="form_item">
                             <input
@@ -45,10 +45,10 @@
                                 name="lastName"
                                 placeholder="Last Name"
                                 aria-label="Last Name"
-                                pattern="[A-Za-zА-Яа-яЁё]"
-                                git
+                                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+(\s[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+)*$"
                                 required
                             />
+                            <p class="error_message text--red"></p>
                         </div>
                         <div class="form_item">
                             <input
@@ -57,8 +57,10 @@
                                 name="emailAddress"
                                 placeholder="Email Address"
                                 aria-label="Email Address"
+                                pattern="^[a-z0-9]+([\.\-_]?[a-z0-9]+)*@[a-z0-9]+([\.\-]?[a-z0-9]+)*(\.[a-z]{2,15})$"
                                 required
                             />
+                            <p class="error_message text--red"></p>
                         </div>
                         <div class="form_item">
                             <input
@@ -67,8 +69,10 @@
                                 name="password"
                                 placeholder="Password"
                                 aria-label="Password"
+                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,20}$"
                                 required
                             />
+                            <p class="error_message text--red"></p>
                         </div>
                         <button type="submit" class="submit_btn" aria-label="submit">
                             Claim your free trial
