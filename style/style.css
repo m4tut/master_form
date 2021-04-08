@@ -126,17 +126,21 @@ body {
     border: 1px solid var(--blue);
 }
 
-.singup__input--invalid {
+.form_input--invalid {
     background: url(../images/icon-error.svg) no-repeat calc(100% - 1rem);
     border: 3px solid var(--red);
 }
 
+.form_input--invalid + .error_message {
+    display: block;
+}
+
 .error_message {
-    display: none;
+    font-style: italic;
     font-size: 0.8rem;
-    font-weight: 400;
-    text-align: end;
+    text-align: right;
     margin-top: 5px;
+    display: none;
 }
 
 .submit_btn {
